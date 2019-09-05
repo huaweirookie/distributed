@@ -1,13 +1,13 @@
-package com.zhunongyun.toalibaba.distributed.concurrent.programming.basics;
+package com.zhunongyun.toalibaba.distributed.concurrent.programming;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Part1Application {
+public class ConcurrentProgrammingApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Part1Application.class, args);
+        SpringApplication.run(ConcurrentProgrammingApplication.class, args);
     }
 
 }

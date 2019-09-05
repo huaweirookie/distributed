@@ -1,4 +1,4 @@
-package com.zhunongyun.toalibaba.distributed.part1;
+package com.zhunongyun.toalibaba.distributed.concurrent.programming;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class Part1ApplicationTests {
+public class ConcurrentProgrammingApplicationTests {
 
     @Test
     public void contextLoads() {
