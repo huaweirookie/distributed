@@ -48,6 +48,8 @@ public class FileHandler {
                     } else {
                         line = line.replaceAll(" | ", "");
                     }
+
+                    line = line.replaceAll(">\\*", ">\\* ");
                 }
                 stringBuffer.append(line).append("\r\n");
             }
