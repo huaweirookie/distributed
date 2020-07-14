@@ -1,0 +1,39 @@
+[TOC]
+
+# 配置组件
+| 注解名称 | 说明 |
+| --- | --- |
+| @Configuration | 把一个类作为一个IOC容器，它的某个方法头上如果注册了@Bean,就会作为这个Spring容器中的Bean |
+| @ComponentScan | 在配置美上添加@ComponentScan注解。该注解默认会扫描该类所在的包下所有的配置类，相当于之前的\<context:component-scan\>
+| @Scope | 用于指定scope作用域的（用在类上） |
+| @Lazy | 表示延迟初始化 |
+| @Conditional | Spring4开始提供，它的作用是按照一定的条件进行判断，满足条件给容器注册Bean |
+| @Import | 导入外部资源 |
+| 生命周期控制 | @PostConstruct用于指定初始化方法（用在方法上） @PreDestory用于指定销毁方法（用在方法上） @DependsOn 定义Bean初始化及销毁时的顺序 |
+
+# 赋值(自动装配)组件
+| 注解名称 | 说明 |
+| --- | --- |
+| @Component | 泛指组件,当组件不好归类的时候,我们可以使用这个注解进行标注 |
+| @Service | 用于标注业务层组件 |
+| @Controller | 用于标注控制层组件 |
+| @Repository | 用于标注数据访问组件，即DAO组件 |
+| @Value | 昔通数据类型赋值 |
+| @Autowired | 默认按类型装配，如果我们想使用按名称装配,可以结合@Qualifier注解一起使用 |
+| @PropertySource | 读取配置文件赋值 |
+| @Qualifier | 如存在多个实例配合使用 |
+| @Primary | 自动装配时当出现多个Bean候选者时，被注解为@Primary的Bean将作为首选者，否则将抛出异常 |
+| @Resource | 默认按名称装配，当找不到与名称匹配的bean才会按类型装配 |
+
+# 织入组件
+| 注解名称 | 说明 |
+| --- | --- |
+| ApplicationContextAware | 可以通过这个上下文环境对象得到 Spring 容器中的 Bean
+| BeanDefinitionRegistryPostProcessor | BeanDefinitionRegistryPostProcessor 实现了 BeanFactoryPostProcessor 接口，是 Spring 框架的 BeanDefinitionRegistry的后处理器，用来注册额外的 BeanDefinition |
+
+# 切面组件
+
+| 注解名称 | 说明 |
+| --- | --- |
+| @EnableTransactionManagement | 添加对事务管理的支持 |
+| @Transactional | 配置声明式事务信息 |
